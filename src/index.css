@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+  font-family: 'Switzer';
+  src: url('./assets/fonts/Switzer-Variable.ttf') format('truetype'); /* Adjust the file name and format if needed */
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  text-decoration: none;
+  font-family: 'Switzer', sans-serif;
+}
+
+.font-bebas {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #F1E7FD;
+}
+
+.bg-button {
+    background-color: #0010FF;
+}
+
+table {
+  width: 100%;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+
+.ReactModal__Body--open {
+  overflow: hidden;
+}
