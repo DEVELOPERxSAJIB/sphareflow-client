@@ -12,8 +12,11 @@ import { GrLanguage } from "react-icons/gr";
 import { FaCheck } from "react-icons/fa6";
 import { FaRegClock } from "react-icons/fa";
 import { FaRegEnvelope } from "react-icons/fa";
-
-
+import VideoGallery from "../ProfileElements/VideoGallery";
+import BorderLinearProgress from "../ProfileElements/ProgressBar";
+import LocationCard from "../ProfileElements/LocationCard";
+import Package from "../ProfileElements/Package";
+import Calendar from "../ProfileElements/Calender";
 
 const UgcCreatorProfile = () => {
   const [toggle, setToggle] = useState("Video");
@@ -30,14 +33,14 @@ const UgcCreatorProfile = () => {
 
   const handleContact = async () => {};
 
-  const handleCopyToClipboard = () => {};
+  // const handleCopyToClipboard = () => {};
 
   return (
     <div className="bg-[#F1E7FD] lg:px-20 px-3 pt-5 min-h-screen">
       <SelectorHeader />
 
       {/* Profile Section */}
-      <section className="font-switzer flex lg:flex-row flex-col gap-6 mt-2 md:mt-6">
+      <section className="flex lg:flex-row flex-col gap-6 mt-2 md:mt-6">
         <section className="lg:w-[70%] w-[100%]">
           <section className="grid grid-cols-1 sm:grid-cols-3 gap-2 w-full">
             {/* Availability Section */}
@@ -216,7 +219,6 @@ const UgcCreatorProfile = () => {
                           >
                             <FaRegEnvelope size={20} color="#fff" />
                             Contact Me
-
                           </button>
                         </div>
                       </div>
@@ -226,30 +228,42 @@ const UgcCreatorProfile = () => {
                 </section>
               </div>
 
-              <div>
+              <div className="relative pb-8 flex flex-col justify-center">
                 <section className="p-4 px-8">
-                  <p className="text-[14px] font-switzer">
+                  <p className="text-[14px]">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Sunt asperiores totam officiis suscipit quidem qui quia fuga
+                    sit ex optio aliquam id commodi molestias at laboriosam
+                    voluptates, ipsam illo eius.
                     <br />
-                    {/* <span className="text-[gray] font-switzer">
-                    #Industries: #Health, Wellness, Fitness #Cosmetics #Consumer
-                    Goods #Food and Beverages #Home #App & Tech #Travel &
-                    Places.
-                  </span>{' '} */}
+                    <span className="text-[gray]">
+                      #Industries: #Health, Wellness, Fitness #Cosmetics
+                      #Consumer Goods #Food and Beverages #Home #App & Tech
+                      #Travel & Places.
+                    </span>{" "}
                     <br />
-                    {/* <span className="text-[blue]">See less</span> */}
+                    <span className="text-[#0011FF] cursor-pointer">
+                      See less
+                    </span>
                   </p>
                 </section>
+                <button className="border border-[#0011FF] rounded-full px-16 py-2 self-center w-fit">
+                  Edit
+                </button>
               </div>
             </div>
           </section>
 
           <section className="mt-5 bg-[#fff] flex justify-between px-5 border py-4 rounded-lg">
-            <h2 className="font-bebas text-[24px]">
-              {/* <FormattedMessage
-                  id={"Profile.mu-ugc"}
-                  defaultMessage={"MY UGC"}
-                /> */}
-            </h2>
+            <h2 className="font-bebas text-[24px]">My UGC</h2>
+          </section>
+
+          <section className="mt-5 bg-[#fff] px-5 border py-4 rounded-lg">
+            <VideoGallery />
+          </section>
+
+          <section className="mt-5 bg-[#fff] px-5 border py-4 rounded-lg">
+            <LocationCard />
           </section>
 
           <section>
@@ -265,8 +279,28 @@ const UgcCreatorProfile = () => {
 
         {/* Empty Sections for Future Content */}
 
-        <section className="lg:w-[30%] w-[100%] ">
-          <div className="w-[100%] flex justify-between bg-[white] py-2 rounded-[12px] px-2">
+        <section className="lg:w-[30%] w-[100%]">
+          <div className="w-[100%] px-4 flex items-center justify-between bg-[white] py-2 rounded-[12px]">
+            <h3 className="text-[24px] font-bebas text-[#4B19FF]">
+              Your score :{" "}
+            </h3>
+
+            <div className="relative flex-1 mx-3">
+              <BorderLinearProgress variant="determinate" value={60} />
+
+              {/* Icon at the exact progress position */}
+              <div
+                className="absolute top-1/2 -translate-y-1/2 w-5 h-5 bg-[#0011FF] rounded-full flex items-center justify-center"
+                style={{ left: `${60}%`, transform: "translate(-50%, -50%)" }}
+              >
+                <span className="text-white text-xs">✔</span>
+              </div>
+            </div>
+
+            <span className="text-[#4B19FF] font-bebas text-[24px]">100%</span>
+          </div>
+
+          <div className="w-[100%] mt-4 flex justify-between bg-[white] py-2 rounded-[12px] px-2">
             <button
               className="w-[49%] h-[40px] text-[#fff] rounded-md text-[14px]"
               onClick={() => handleToggle("Video")}
@@ -289,22 +323,22 @@ const UgcCreatorProfile = () => {
             </button>
           </div>
 
+          <Package />
+
+          <div className="py-3 text-center flex flex-col gap-2">
+            <p className="px-4">Contact me for any questions, additional options or custom orders.</p>
+            <button className="w-full bg-[#0011FF] text-white rounded-full px-16 py-2 self-center">
+              Edit
+            </button>
+          </div>
+
           <div className="align-center flex-col mt-7 hidden">
             <p className="font-switzer text-[12px] text-center"></p>
             <button className="text-[14px] px-[50px] py-[10px] bg-[#0011FF] mt-5 text-[#fff] rounded-[32px]"></button>
           </div>
 
           <div className="p-4 bg-white my-4 rounded-lg">
-            <p className="text-[24px] font-bebas text-black mb-4">
-              Availability
-            </p>
-
-            <div className="grid grid-cols-2">
-              <p className="text-capitalize capitalize">{}</p>
-              <p>Okay</p>
-            </div>
-
-            <p>name has not provided information about their availability.</p>
+            <Calendar />
           </div>
         </section>
       </section>
