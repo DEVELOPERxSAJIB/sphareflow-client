@@ -41,7 +41,7 @@ const Calendar = () => {
   }
 
   return (
-    <div className="bg-white rounded-xl p-4 w-full">
+    <div className="bg-white rounded-xl p-8 w-full">
       {/* Month & Year */}
       <div className="flex justify-between items-center mb-3">
         <button onClick={prevMonth}>

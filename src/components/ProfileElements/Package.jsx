@@ -1,6 +1,4 @@
-import React from "react";
-
-const Package = () => {
+const Package = ({ widthClass = "w-full" }) => {
   const packages = [
     {
       id: "1",
@@ -70,7 +68,7 @@ const Package = () => {
         <>
           <div
             key={item.id}
-            className="bg-[#fff] mt-4 rounded-xl border border-[#EEE] shadow-sm w-full"
+            className={`bg-[#fff] mt-4 rounded-xl border border-[#EEE] shadow-sm ${widthClass}`}
           >
             <div className="top-area p-4 ">
               <div className="flex justify-between items-center">
@@ -90,11 +88,16 @@ const Package = () => {
                 ))}
               </ul>
             </div>
-            <div className="flex justify-between gap-4 p-4 bg-[#FFFCF3]">
-              <button className="border border-[#0011FF] rounded-full px-16 py-2 self-center w-fit">
+            <div
+            style={{
+              borderBottomLeftRadius : "15px",
+              borderBottomRightRadius : "15px"
+            }} 
+             className="flex justify-between gap-4 p-4 bg-[#FFFCF3]">
+              <button className="border border-[#0011FF] rounded-full px-6 lg:px-16 py-2 self-center w-fit">
                 Edit
               </button>
-              <button className="bg-[#0011FF] text-[white] rounded-full px-16 py-2 self-center w-fit">
+              <button className="bg-[#0011FF] text-[white] rounded-full px-6 lg:px-16 py-2 self-center w-fit">
                 Delete
               </button>
             </div>
