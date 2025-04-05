@@ -1,4 +1,5 @@
 import Selection from "../../pages/Selection/Selection";
+import ConnectStripe from "../../pages/UgcCreator/ConnectStripe";
 import CreatePackages from "../../pages/UgcCreator/CreatePackages";
 import CreateProfile from "../../pages/UgcCreator/CreateUgcProfile";
 import UgcProfile from "../../pages/UgcCreator/UgcProfile";
@@ -9,20 +10,24 @@ export const PrivateRouter = [
     element: <PrivateGuard />,
     children: [
       {
-        path: "/role-selection",
+        path: "/select-role",
         element: <Selection />,
       },
       {
-        path: "/ugc-creator/",
+        path: "/creator",
         element: <UgcProfile />,
       },
       {
-        path: "/ugc-creator/createprofile",
+        path: "/creator/profile",
         element: <CreateProfile />,
       },
       {
-        path: "/ugc-creator/createprofile/create-package",
+        path: "/creator/profile/package",
         element: <CreatePackages />,
+      },
+      {
+        path: "/creator/profile/stripe-connect",
+        element: <ConnectStripe />,
       },
     ],
   },

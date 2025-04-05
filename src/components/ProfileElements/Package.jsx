@@ -1,5 +1,5 @@
 const Package = ({ widthClass = "w-full" }) => {
-  const packages = [
+  const packagesVideo = [
     {
       id: "1",
       name: "Video 1",
@@ -64,7 +64,7 @@ const Package = ({ widthClass = "w-full" }) => {
 
   return (
     <>
-      {packages?.map((item) => (
+      {packagesVideo?.map((item) => (
         <>
           <div
             key={item.id}
