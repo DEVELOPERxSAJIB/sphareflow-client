@@ -1,7 +1,10 @@
 import Selection from "../../pages/Selection/Selection";
+import ChatPage from "../../pages/UgcCreator/ChatPage.jsx";
 import ConnectStripe from "../../pages/UgcCreator/ConnectStripe";
 import CreatePackages from "../../pages/UgcCreator/CreatePackages";
 import CreateProfile from "../../pages/UgcCreator/CreateUgcProfile";
+import EditProfile from "../../pages/UgcCreator/EditUgcProfile.jsx";
+import MyOrders from "../../pages/UgcCreator/MyOrders.jsx";
 import UgcProfile from "../../pages/UgcCreator/UgcProfile";
 import PrivateGuard from "./PrivateGuard";
 
@@ -22,12 +25,24 @@ export const PrivateRouter = [
         element: <CreateProfile />,
       },
       {
+        path: "/creator/edit-profile",
+        element: <EditProfile />,
+      },
+      {
         path: "/creator/profile/package",
         element: <CreatePackages />,
       },
       {
         path: "/creator/profile/stripe-connect",
         element: <ConnectStripe />,
+      },
+      {
+        path: "/creator/profile/message",
+        element: <ChatPage />,
+      },
+      {
+        path: "/creator/profile/myorders",
+        element: <MyOrders />,
       },
     ],
   },

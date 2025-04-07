@@ -43,7 +43,7 @@ function SelectorHeader() {
         <div className="hidden lg:flex lg:items-center space-x-6 ">
           <LanguageSwitcher />
           <div className="flex items-center space-x-2">
-            <img alt="menu" width={30} height={30} className="rounded-full" />
+            <img src="https://www.pngplay.com/wp-content/uploads/12/User-Avatar-Profile-Transparent-Clip-Art-PNG.png" alt="menu" width={30} height={30} className="rounded-full" />
             <p className="text-sm max-w-[100px] truncate"></p>
           </div>
           <Notification />

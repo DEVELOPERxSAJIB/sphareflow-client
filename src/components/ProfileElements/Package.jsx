@@ -1,4 +1,4 @@
-const Package = ({ widthClass = "w-full" }) => {
+const Package = ({ widthClass = "w-full", type = "video" }) => {
   const packagesVideo = [
     {
       id: "1",
@@ -62,9 +62,74 @@ const Package = ({ widthClass = "w-full" }) => {
     },
   ];
 
+  const packagesPhoto = [
+    {
+      id: "1",
+      name: "Photo 1",
+      price: "150",
+      features: [
+        "5 Edited Photos",
+        "1 Revision included",
+        "3 Days delivery",
+        "Basic Retouching",
+        "Standard Resolution",
+      ],
+    },
+    {
+      id: "2",
+      name: "Photo 2",
+      price: "250",
+      features: [
+        "10 Edited Photos",
+        "2 Revisions included",
+        "5 Days delivery",
+        "Advanced Retouching",
+        "High Resolution",
+      ],
+    },
+    {
+      id: "3",
+      name: "Photo 3",
+      price: "400",
+      features: [
+        "15 Edited Photos",
+        "Unlimited Revisions",
+        "7 Days delivery",
+        "Creative Retouching",
+        "High-Res + Web-Optimized",
+      ],
+    },
+    {
+      id: "4",
+      name: "Photo 4",
+      price: "600",
+      features: [
+        "25 Edited Photos",
+        "Unlimited Revisions",
+        "10 Days delivery",
+        "Studio-Grade Editing",
+        "Background Removal",
+      ],
+    },
+    {
+      id: "5",
+      name: "Photo 5",
+      price: "850",
+      features: [
+        "40 Edited Photos",
+        "Unlimited Revisions",
+        "14 Days delivery",
+        "Commercial Use",
+        "Brand-Centric Styling",
+      ],
+    },
+  ];
+  
+  const packages = type === "photo" ? packagesPhoto : packagesVideo;
+
   return (
     <>
-      {packagesVideo?.map((item) => (
+      {packages?.map((item) => (
         <>
           <div
             key={item.id}

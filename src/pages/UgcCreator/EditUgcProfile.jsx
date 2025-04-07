@@ -13,7 +13,7 @@ import LocationCard from "../../components/ProfileElements/LocationCard";
 import { FaCheck } from "react-icons/fa";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 
-function CreateProfile() {
+function EditProfile() {
 
   const [uploadProfile, setUploadProfile] = useState("");
   const [userData, setUserData] = useState({});
@@ -306,4 +306,4 @@ function CreateProfile() {
   );
 }
 
-export default CreateProfile;
+export default EditProfile;

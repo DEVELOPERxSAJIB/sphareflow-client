@@ -24,16 +24,19 @@ const UgcCreatorProfile = () => {
   const handleToggle = (value) => {
     setToggle(value);
   };
+
+  const [expanded, setExpanded] = useState(false);
+
+  const handleToggleExpanation = () => {
+    setExpanded((prev) => !prev);
+  };
+
   const [toggleAvailableAndUnavailable, setToggleAvailableAndUnavailable] =
     useState(true);
 
   const handleToggleAvailableAndUnavailable = (value) => {
     setToggleAvailableAndUnavailable(value);
   };
-
-  const handleContact = async () => {};
-
-  // const handleCopyToClipboard = () => {};
 
   return (
     <div className="bg-[#F1E7FD] lg:px-20 px-3 pt-5 min-h-screen">
@@ -213,13 +216,13 @@ const UgcCreatorProfile = () => {
                           </div>
                         </div>
                         <div className="flex items-center">
-                          <button
-                            onClick={handleContact}
+                          <Link
+                          to={"/creator/profile/message"}
                             className="bg-[#0011FF] text-white px-10 py-2 flex gap-2 space-x-10 items-center rounded-[32px] text-[14px] lg:mt-0 mt-5"
                           >
                             <FaRegEnvelope size={20} color="#fff" />
                             Contact Me
-                          </button>
+                          </Link>
                         </div>
                       </div>
                     </section>
@@ -240,16 +243,37 @@ const UgcCreatorProfile = () => {
                       #Industries: #Health, Wellness, Fitness #Cosmetics
                       #Consumer Goods #Food and Beverages #Home #App & Tech
                       #Travel & Places.
-                    </span>{" "}
+                    </span>
                     <br />
-                    <span className="text-[#0011FF] cursor-pointer">
-                      See less
+                    {expanded && (
+                      <span>
+                        <br />
+                        <span className="text-[14px] text-black">
+                          We specialize in creating engaging content that
+                          connects brands with their audiences. Whether you're
+                          in the wellness sector, tech industry, or travel
+                          niche, our tailored approach ensures your message hits
+                          the mark.
+                          <br />
+                          Our services are backed by extensive experience across
+                          multiple sectors, helping you build strong brand
+                          recognition, trust, and impact.
+                        </span>
+                      </span>
+                    )}
+                    <br />
+                    <span
+                      onClick={handleToggleExpanation}
+                      className="text-[#0011FF] cursor-pointer"
+                    >
+                      {expanded ? "See Less" : "See More"}
                     </span>
                   </p>
                 </section>
-                <button className="border border-[#0011FF] rounded-full px-16 py-2 self-center w-fit">
+
+                <Link to={"/creator/edit-profile"} className="border border-[#0011FF] rounded-full px-16 py-2 self-center w-fit">
                   Edit
-                </button>
+                </Link>
               </div>
             </div>
           </section>
@@ -323,10 +347,12 @@ const UgcCreatorProfile = () => {
             </button>
           </div>
 
-          <Package />
+          <Package type={toggle.toLowerCase()} />
 
           <div className="py-3 text-center flex flex-col gap-2">
-            <p className="px-4">Contact me for any questions, additional options or custom orders.</p>
+            <p className="px-4">
+              Contact me for any questions, additional options or custom orders.
+            </p>
             <button className="w-full bg-[#0011FF] text-white rounded-full px-16 py-2 self-center">
               Edit
             </button>

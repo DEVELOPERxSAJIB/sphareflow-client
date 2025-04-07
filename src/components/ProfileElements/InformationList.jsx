@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { BsStripe } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 
 const InformationList = ({ scrollToSection }) => {
@@ -40,10 +41,10 @@ const InformationList = ({ scrollToSection }) => {
       </div>
 
       <div className="w-[360px] rounded-[12px] lg:block md:hidden sm:hidden xs:hidden">
-        <button className="flex items-center justify-center gap-3 bg-[#0011FF] w-full px-6 md:px-16 py-3 rounded-[30px] mt-4 text-[#fff]">
+        <Link to={"/creator/profile/stripe-connect"} className="flex items-center justify-center gap-3 bg-[#0011FF] w-full px-6 md:px-16 py-3 rounded-[30px] mt-4 text-[#fff]">
         <BsStripe size={25} className="text-white" />
         Connect Stripe*
-        </button>
+        </Link>
       </div>
     </>
   );
