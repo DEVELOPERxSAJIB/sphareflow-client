@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Package = ({ widthClass = "w-full", type = "video" }) => {
   const packagesVideo = [
     {
@@ -159,9 +161,9 @@ const Package = ({ widthClass = "w-full", type = "video" }) => {
               borderBottomRightRadius : "15px"
             }} 
              className="flex justify-between gap-4 p-4 bg-[#FFFCF3]">
-              <button className="border border-[#0011FF] rounded-full px-6 lg:px-16 py-2 self-center w-fit">
+              <Link to={'/creator/profile/package'} className="border border-[#0011FF] rounded-full px-6 lg:px-16 py-2 self-center w-fit">
                 Edit
-              </button>
+              </Link>
               <button className="bg-[#0011FF] text-[white] rounded-full px-6 lg:px-16 py-2 self-center w-fit">
                 Delete
               </button>

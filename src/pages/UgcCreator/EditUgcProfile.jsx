@@ -12,9 +12,9 @@ import Calendar from "../../components/ProfileElements/Calender";
 import LocationCard from "../../components/ProfileElements/LocationCard";
 import { FaCheck } from "react-icons/fa";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
+import HeaderUgcCreatorProfile from "../../components/Header/HeaderUgcCreatorProfile";
 
 function EditProfile() {
-
   const [uploadProfile, setUploadProfile] = useState("");
   const [userData, setUserData] = useState({});
 
@@ -75,7 +75,7 @@ function EditProfile() {
 
   return (
     <div className="lg:px-20 md:px-5 sm:px-5 xs:px-5 pt-5 px-4 h-screen">
-
+      <HeaderUgcCreatorProfile />
       <div className="flex flex-col lg:flex-row mt-5">
         <div className="w-full lg:w-[30%] hidden lg:block lg:sticky top-5 h-max">
           <InformationList
@@ -192,9 +192,7 @@ function EditProfile() {
           <div ref={createPackageRef} className="mt-8">
             <div className="flex justify-between">
               <h3 className="font-bold font-switzer text-[20px]">Package</h3>
-              <button
-                className="bg-[#0011FF] px-5 text-[#fff] py-2 rounded-[22px]"
-              >
+              <button className="bg-[#0011FF] px-5 text-[#fff] py-2 rounded-[22px]">
                 Create Package
               </button>
             </div>

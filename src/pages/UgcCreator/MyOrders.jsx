@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import SelectorHeader from "../../components/SelectorHeader";
 import { AllOrders, CompletedOrders } from "../../components/ProfileElements/OrderTable";
+import HeaderUgcCreatorProfile from "../../components/Header/HeaderUgcCreatorProfile";
 
 const MyOrders = () => {
   const [activeTab, setActiveTab] = useState("active");
@@ -11,7 +11,7 @@ const MyOrders = () => {
 
   return (
     <div className="lg:px-20 md:px-5 sm:px-5 xs:px-5 pt-5 px-4 h-screen">
-      <SelectorHeader />
+      <HeaderUgcCreatorProfile />
 
       <div className="mt-8 min-h-screen">
         <h1 className="text-xl font-bold mb-4">MY ORDERS</h1>

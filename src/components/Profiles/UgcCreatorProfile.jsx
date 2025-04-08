@@ -1,7 +1,6 @@
 import React, { useState, Suspense } from "react";
 import { PuffLoader } from "react-spinners";
 import { Link } from "react-router-dom";
-import SelectorHeader from "../SelectorHeader";
 import { Link2Icon } from "lucide-react";
 import { FaEye } from "react-icons/fa";
 import { RiUserSharedLine } from "react-icons/ri";
@@ -17,6 +16,7 @@ import BorderLinearProgress from "../ProfileElements/ProgressBar";
 import LocationCard from "../ProfileElements/LocationCard";
 import Package from "../ProfileElements/Package";
 import Calendar from "../ProfileElements/Calender";
+import HeaderUgcCreatorProfile from "../Header/HeaderUgcCreatorProfile";
 
 const UgcCreatorProfile = () => {
   const [toggle, setToggle] = useState("Video");
@@ -40,7 +40,7 @@ const UgcCreatorProfile = () => {
 
   return (
     <div className="bg-[#F1E7FD] lg:px-20 px-3 pt-5 min-h-screen">
-      <SelectorHeader />
+      <HeaderUgcCreatorProfile />
 
       {/* Profile Section */}
       <section className="flex lg:flex-row flex-col gap-6 mt-2 md:mt-6">
@@ -288,16 +288,6 @@ const UgcCreatorProfile = () => {
 
           <section className="mt-5 bg-[#fff] px-5 border py-4 rounded-lg">
             <LocationCard />
-          </section>
-
-          <section>
-            <Suspense
-              fallback={
-                <div className="flex justify-center mt-8">
-                  <PuffLoader color="#0011FF" size={50} />
-                </div>
-              }
-            ></Suspense>
           </section>
         </section>
 

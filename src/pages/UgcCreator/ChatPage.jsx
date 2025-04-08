@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import SelectorHeader from "../../components/SelectorHeader";
 import { FaCircle } from "react-icons/fa";
 import { IoMdSend } from "react-icons/io";
 import {
@@ -9,6 +8,7 @@ import {
   DialogTitle,
 } from "@headlessui/react";
 import { RxCross2 } from "react-icons/rx";
+import HeaderUgcCreatorProfile from "../../components/Header/HeaderUgcCreatorProfile";
 
 const ChatPage = () => {
   const [open, setOpen] = useState(false);
@@ -35,7 +35,7 @@ const ChatPage = () => {
 
   return (
     <div className="lg:px-20 md:px-5 sm:px-5 xs:px-5 pt-5 px-4 h-screen">
-      <SelectorHeader />
+      <HeaderUgcCreatorProfile />
 
       {/* Package Modal */}
 
