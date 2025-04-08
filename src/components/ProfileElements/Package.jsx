@@ -126,11 +126,12 @@ const Package = ({ widthClass = "w-full", type = "video" }) => {
       ],
     },
   ];
-  
+
   const packages = type === "photo" ? packagesPhoto : packagesVideo;
 
   return (
     <>
+
       {packages?.map((item) => (
         <>
           <div
@@ -156,12 +157,16 @@ const Package = ({ widthClass = "w-full", type = "video" }) => {
               </ul>
             </div>
             <div
-            style={{
-              borderBottomLeftRadius : "15px",
-              borderBottomRightRadius : "15px"
-            }} 
-             className="flex justify-between gap-4 p-4 bg-[#FFFCF3]">
-              <Link to={'/creator/profile/package'} className="border border-[#0011FF] rounded-full px-6 lg:px-16 py-2 self-center w-fit">
+              style={{
+                borderBottomLeftRadius: "15px",
+                borderBottomRightRadius: "15px",
+              }}
+              className="flex justify-between gap-4 p-4 bg-[#FFFCF3]"
+            >
+              <Link
+                to={"/creator/profile/package"}
+                className="border border-[#0011FF] rounded-full px-6 lg:px-16 py-2 self-center w-fit"
+              >
                 Edit
               </Link>
               <button className="bg-[#0011FF] text-[white] rounded-full px-6 lg:px-16 py-2 self-center w-fit">

@@ -13,6 +13,7 @@ import LocationCard from "../../components/ProfileElements/LocationCard";
 import { FaCheck } from "react-icons/fa";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import HeaderUgcCreatorProfile from "../../components/Header/HeaderUgcCreatorProfile";
+import CreatePackage from "../../components/ProfileElements/Modal/CreatePackage";
 
 function CreateProfile() {
   const [uploadProfile, setUploadProfile] = useState("");
@@ -72,6 +73,8 @@ function CreateProfile() {
   const toggleCheckbox = (index) => {
     setCheckedItems((prev) => ({ ...prev, [index]: !prev[index] }));
   };
+
+  const [createPackageModalOpen, setCreatePackageModalOpen] = useState(false);
 
   return (
     <div className="lg:px-20 md:px-5 sm:px-5 xs:px-5 pt-5 px-4 h-screen">
@@ -192,7 +195,14 @@ function CreateProfile() {
           <div ref={createPackageRef} className="mt-8">
             <div className="flex justify-between">
               <h3 className="font-bold font-switzer text-[20px]">Package</h3>
-              <button className="bg-[#0011FF] px-5 text-[#fff] py-2 rounded-[22px]">
+              <CreatePackage
+                open={createPackageModalOpen}
+                setOpen={setCreatePackageModalOpen}
+              />
+              <button
+                onClick={() => setCreatePackageModalOpen(true)}
+                className="bg-[#0011FF] px-5 text-[#fff] py-2 rounded-[22px]"
+              >
                 Create Package
               </button>
             </div>

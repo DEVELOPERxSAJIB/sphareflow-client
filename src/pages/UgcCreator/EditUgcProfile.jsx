@@ -13,6 +13,7 @@ import LocationCard from "../../components/ProfileElements/LocationCard";
 import { FaCheck } from "react-icons/fa";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import HeaderUgcCreatorProfile from "../../components/Header/HeaderUgcCreatorProfile";
+import { Link } from "react-router-dom";
 
 function EditProfile() {
   const [uploadProfile, setUploadProfile] = useState("");
@@ -192,9 +193,9 @@ function EditProfile() {
           <div ref={createPackageRef} className="mt-8">
             <div className="flex justify-between">
               <h3 className="font-bold font-switzer text-[20px]">Package</h3>
-              <button className="bg-[#0011FF] px-5 text-[#fff] py-2 rounded-[22px]">
+              <Link to={'/creator/profile/package'} className="bg-[#0011FF] px-5 text-[#fff] py-2 rounded-[22px]">
                 Create Package
-              </button>
+              </Link>
             </div>
             <div className="flex gap-2 flex-wrap flex-col md:flex-row justify-between">
               <Package widthClass="md:w-[48.9%] w-full" />

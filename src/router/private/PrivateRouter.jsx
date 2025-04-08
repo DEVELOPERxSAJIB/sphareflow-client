@@ -44,6 +44,15 @@ export const PrivateRouter = [
         path: "/creator/profile/myorders",
         element: <MyOrders />,
       },
+
+
+
+
+
+      {
+        path : "/brand",
+        element : ""
+      }
     ],
   },
 ];

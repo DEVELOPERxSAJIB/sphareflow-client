@@ -44,7 +44,7 @@ const HeaderUgcCreatorProfile = () => {
               <Link to="/creator/profile/myorders">My Orders</Link>
             </li>
             <li className="text-[16px] text-[#000] hover:text-[#0011FF] cursor-pointer">
-              <Link className="flex flex-row items-center gap-2" to="/creator">
+              <Link className="flex flex-row items-center gap-2" to="/creator/profile">
                 Profile
                 <span class="bg-[#0011FF] text-white text-[13px] font-normal px-2.5 py-0.5 rounded-full">
                   Available
