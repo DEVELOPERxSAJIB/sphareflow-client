@@ -8,7 +8,7 @@ import Notification from "../Elements/Notification";
 import { RxCross2 } from "react-icons/rx";
 import { GoDotFill } from "react-icons/go";
 
-const HeaderUgcCreatorProfile = () => {
+const HeaderBrand = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -24,7 +24,7 @@ const HeaderUgcCreatorProfile = () => {
           </Link>
           <button className="bg-[#0011FF] hidden sm:block px-4 py-2 rounded-md text-[#fff]">
             <div className="flex items-center gap-2 text-[16px] font-normal">
-              + Invite a client to SphèreFlow
+              + Search for Creator UGC
             </div>
           </button>
         </div>
@@ -44,7 +44,10 @@ const HeaderUgcCreatorProfile = () => {
               <Link to="/creator/profile/myorders">My Orders</Link>
             </li>
             <li className="text-[16px] text-[#000] hover:text-[#0011FF] cursor-pointer">
-              <Link className="flex flex-row items-center gap-2" to="/creator/profile">
+              <Link
+                className="flex flex-row items-center gap-2"
+                to="/creator/profile"
+              >
                 Profile
                 <span class="bg-[#0011FF] text-white text-[13px] font-normal px-2.5 py-0.5 rounded-full">
                   Available
@@ -141,4 +144,4 @@ const HeaderUgcCreatorProfile = () => {
   );
 };
 
-export default HeaderUgcCreatorProfile;
+export default HeaderBrand;

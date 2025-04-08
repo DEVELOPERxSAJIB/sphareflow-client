@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useRef, useCallback } from "react";
-import InformationList from "../../components/ProfileElements/InformationList";
+import InformationList from "../../components/BrandElements/BrandInformationList";
 import BasicInfoCard from "../../components/ProfileElements/BasicInfoCard";
 import UserInfoForm from "../../components/ProfileElements/UserInfoForm";
 import { equipment, filming, industries, pets } from "../../constants/data";

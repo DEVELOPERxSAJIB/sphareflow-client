@@ -1,3 +1,4 @@
+import BrandProfile from "../../pages/Brand/BrandProfile.jsx";
 import Selection from "../../pages/Selection/Selection";
 import ChatPage from "../../pages/UgcCreator/ChatPage.jsx";
 import ConnectStripe from "../../pages/UgcCreator/ConnectStripe";
@@ -51,7 +52,7 @@ export const PrivateRouter = [
 
       {
         path : "/brand",
-        element : ""
+        element : <BrandProfile />
       }
     ],
   },

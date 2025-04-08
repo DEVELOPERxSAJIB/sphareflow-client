@@ -2,19 +2,10 @@ import React, { useState } from "react";
 import { BsStripe } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
-
-const InformationList = ({ scrollToSection }) => {
+const BrandInformationList = ({ scrollToSection }) => {
   const [clickedItem, setClickedItem] = useState(0);
 
-  const items = [
-    "Profile Settings",
-    "Industries",
-    "Equipment",
-    "Filming",
-    "Pets",
-    "Add UGC",
-    "Create Package",
-  ];
+  const items = ["Basic Information", "Industries", "Your localisation"];
 
   const handleClick = (index) => {
     setClickedItem(index);
@@ -41,13 +32,14 @@ const InformationList = ({ scrollToSection }) => {
       </div>
 
       <div className="w-[360px] rounded-[12px] lg:block md:hidden sm:hidden xs:hidden">
-        <Link to={"/creator/profile/stripe-connect"} className="flex items-center justify-center gap-3 bg-[#0011FF] w-full px-6 md:px-16 py-3 rounded-[30px] mt-4 text-[#fff]">
-        <BsStripe size={25} className="text-white" />
-        Connect Stripe*
+        <Link
+          className="flex items-center justify-center gap-3 shadow-md translate-all duration-300 bg-white text-slate-800 hover:bg-red-500 w-full px-6 md:px-16 py-3 rounded-[30px] mt-4 hover:text-[#fff]"
+        >
+          Delete Account
         </Link>
       </div>
     </>
   );
 };
 
-export default InformationList;
+export default BrandInformationList;

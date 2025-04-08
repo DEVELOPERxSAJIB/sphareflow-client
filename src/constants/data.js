@@ -365,6 +365,49 @@ export const industries = [
   "Energy & Utilities",
 ];
 
+export const industriesBrand = [
+  // Fashion & Beauty
+  "Fashion (Clothing, Accessories, Shoes)",
+  "Beauty & Skincare",
+  "Haircare (Products, Extensions, Salons)",
+  "Cosmetics & Nails",
+
+  // Lifestyle & Well-Being
+  "Health & Wellness (Fitness, Yoga, Spa, Massages)",
+  "Luxury & High-End Lifestyle",
+  "Travel & Tourism (Hotels, Agencies, Experiences)",
+  "Events & Entertainment (Weddings, Concerts)",
+
+  // Tech & Digital
+  "App & Tech (Mobile apps, SaaS, Startups)",
+  "Crypto & Web3",
+  "Gaming & eSports",
+
+  // Food & Beverages
+  "Restaurants & Cafés",
+  "Food Delivery Services",
+  "Wine & Spirits",
+  "Healthy Food & Supplements",
+
+  // Home & Décor
+  "Real Estate & Property",
+  "Furniture & Interior Design",
+  "Home Appliances & Smart Home",
+
+  // Mobility & Transportation
+  "Cars & Auto (Cars, Bikes, EVs)",
+  "Aviation & Luxury Transport",
+
+  // Education & Services
+  "E-learning & Coaching",
+  "Personal Finance & Investment",
+  "Legal & Business Services",
+
+  // Other
+  "Other",
+];
+
+
 export const equipment = [
   "Hourse",
   "Apartment",

@@ -3,7 +3,7 @@ import { countries } from "../../constants/data";
 import { languages } from "../../constants/data";
 import Select from "react-select";
 
-const UserInfoForm = ({ setUserData, handleSubmit }) => {
+const UserInfoFormBrand = ({ setUserData, handleSubmit }) => {
   const [selectedCountry, setSelectedCountry] = useState("");
   const [selectedLanguages, setSelectedLanguages] = useState([]);
   const [cities, setCities] = useState([]);
@@ -65,7 +65,7 @@ const UserInfoForm = ({ setUserData, handleSubmit }) => {
             htmlFor="firstName"
             className="block text-[14px] text-[#686868]"
           >
-            First Name*
+            First Name
           </label>
           <input
             type="text"
@@ -80,7 +80,7 @@ const UserInfoForm = ({ setUserData, handleSubmit }) => {
             htmlFor="lastName"
             className="block text-[14px] text-[#686868]"
           >
-            Last Name*
+            Last Name
           </label>
           <input
             type="text"
@@ -91,19 +91,19 @@ const UserInfoForm = ({ setUserData, handleSubmit }) => {
           />
         </div>
       </div>
-      
+      {/* Brand Name */}
       <div className="grid grid-cols-1 sm:grid-cols-1 gap-4 mb-4">
         <div>
           <label
-            htmlFor="userName"
+            htmlFor="brandName"
             className="block text-[14px] text-[#686868]"
           >
-            Public Display Name*
+            Brand Name
           </label>
           <input
             type="text"
-            id="userName"
-            name="userName"
+            id="brandName"
+            name="brandName"
             onChange={handleChange}
             className="mt-1 p-2 block w-full border border-[#F1E7FD] rounded-[40px] px-4 text-[14px] text-[#686868]"
           />
@@ -114,7 +114,7 @@ const UserInfoForm = ({ setUserData, handleSubmit }) => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
         <div>
           <label htmlFor="country" className="block text-[14px] text-[#686868]">
-            Country*
+            Country
           </label>
           <select
             id="country"
@@ -140,7 +140,7 @@ const UserInfoForm = ({ setUserData, handleSubmit }) => {
         </div>
         <div>
           <label htmlFor="city" className="block text-[14px] text-[#686868]">
-            City*
+            City
           </label>
           <select
             id="city"
@@ -192,30 +192,12 @@ const UserInfoForm = ({ setUserData, handleSubmit }) => {
             placeholder="Select a Language"
           />
         </div>
-        <div>
-          <label htmlFor="sex" className="block text-[14px] text-[#686868]">
-            Sex{" "}
-          </label>
-          <select
-            id="sex"
-            name="sex"
-            onChange={handleChange}
-            className="mt-1 p-2 block w-full border border-[#F1E7FD] rounded-[40px] text-[14px] text-[#686868]"
-          >
-            <option value="" disabled selected hidden>
-              Select Sex
-            </option>
-            <option value="Male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
       </div>
 
       {/* Date of Birth */}
-      <div className="mb-4">
+      <div className="mb-4 hidden">
         <label htmlFor="dob" className="block text-[14px] text-[#686868]">
-          Date of Birth*
+          Date of Birth
         </label>
         <input
           type="date"
@@ -232,7 +214,7 @@ const UserInfoForm = ({ setUserData, handleSubmit }) => {
           htmlFor="description"
           className="block text-[14px] text-[#686868]"
         >
-          Description*
+          Description
         </label>
         <textarea
           id="description"
@@ -247,4 +229,4 @@ const UserInfoForm = ({ setUserData, handleSubmit }) => {
   );
 };
 
-export default UserInfoForm;
+export default UserInfoFormBrand;
