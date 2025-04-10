@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useRef, useCallback } from "react";
-import InformationList from "../../components/BrandElements/BrandInformationList";
 import BasicInfoCard from "../../components/ProfileElements/BasicInfoCard";
 import UserInfoForm from "../../components/ProfileElements/UserInfoForm";
 import { equipment, filming, industries, pets } from "../../constants/data";
@@ -14,6 +13,7 @@ import { FaCheck } from "react-icons/fa";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import HeaderUgcCreatorProfile from "../../components/Header/HeaderUgcCreatorProfile";
 import { Link } from "react-router-dom";
+import InformationList from "../../components/ProfileElements/InformationList";
 
 function EditProfile() {
   const [uploadProfile, setUploadProfile] = useState("");
@@ -136,7 +136,7 @@ function EditProfile() {
             <IndustriesSelection
               title={"Industries"}
               description={"Select at least 1 industry"}
-              industries={industries}
+              industries={industries.map((item) => item.label)}
               onSelect={handleIndustrySelect}
               selectedIndustries={selectedIndustries}
             />

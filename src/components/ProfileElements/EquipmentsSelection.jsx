@@ -16,13 +16,13 @@ const EquipmentsSelection = ({
           <button
             key={index}
             className={`border px-3 py-2 rounded-[22px] ${
-                selectedEquipment.includes(equipment)
+                selectedEquipment.includes(equipment.value)
                 ? "bg-[#0011FF] text-white"
                 : "text-gray-500 hover:bg-gray-100"
             } transition-all duration-200`}
-            onClick={() => onSelect(equipment)}
+            onClick={() => onSelect(equipment.value)}
           >
-            {equipment}
+            {equipment.label}
           </button>
         ))}
       </div>

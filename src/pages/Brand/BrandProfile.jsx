@@ -1,6 +1,6 @@
 import React, { useCallback, useRef, useState } from "react";
 import HeaderUgcCreatorProfile from "../../components/Header/HeaderUgcCreatorProfile";
-import { industriesBrand } from "../../constants/data";
+import { industries } from "../../constants/data";
 import LocationCard from "../../components/ProfileElements/LocationCard";
 import { FaCheck } from "react-icons/fa";
 import BrandInformationList from "../../components/BrandElements/BrandInformationList";
@@ -87,7 +87,7 @@ const BrandProfile = () => {
             <IndustriesForBrand
               title={"Industries"}
               description={"Select at least 1 industry"}
-              industries={industriesBrand}
+              industries={industries}
               onSelect={handleIndustrySelect}
               selectedIndustries={selectedIndustries}
             />

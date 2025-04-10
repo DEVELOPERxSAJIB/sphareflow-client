@@ -22,10 +22,10 @@ const HeaderBrand = () => {
           <Link to="/creator">
             <img src={LogoSphere} alt="logo" width={110} height={80} />
           </Link>
-          <button className="bg-[#0011FF] hidden sm:block px-4 py-2 rounded-md text-[#fff]">
-            <div className="flex items-center gap-2 text-[16px] font-normal">
+          <button className="bg-[#0011FF] hidden md:block px-4 py-2 rounded-md text-[#fff]">
+            <Link to={'/brand/search-creator'} className="flex items-center gap-2 text-[16px] font-normal">
               + Search for Creator UGC
-            </div>
+            </Link>
           </button>
         </div>
         {/* desktop navbar */}
@@ -34,25 +34,25 @@ const HeaderBrand = () => {
             <li className="text-[16px] text-[#000] hover:text-[#0011FF] cursor-pointer">
               <Link
                 className="flex items-center gap-0"
-                to="/creator/profile/message"
+                to="/brand/profile"
               >
                 <span className="block">Message</span>
                 <GoDotFill color="red" className="mt-0.5" />
               </Link>
             </li>
             <li className="text-[16px] text-[#000] hover:text-[#0011FF] cursor-pointer">
-              <Link to="/creator/profile/myorders">My Orders</Link>
+              <Link to="/brand/my-orders">My Orders</Link>
             </li>
             <li className="text-[16px] text-[#000] hover:text-[#0011FF] cursor-pointer">
               <Link
                 className="flex flex-row items-center gap-2"
-                to="/creator/profile"
+                to="/brand"
               >
                 Profile
-                <span class="bg-[#0011FF] text-white text-[13px] font-normal px-2.5 py-0.5 rounded-full">
+                <span className="bg-[#0011FF] text-white text-[13px] font-normal px-2.5 py-0.5 rounded-full">
                   Available
                 </span>
-                <span class="bg-gray-100 text-gray-800 text-[13px] font-medium me-2 px-2.5 py-0.5 rounded-full">
+                <span className="bg-gray-100 text-gray-800 text-[13px] font-medium me-2 px-2.5 py-0.5 rounded-full">
                   Unvailable
                 </span>
               </Link>
@@ -130,13 +130,20 @@ const HeaderBrand = () => {
               href="/buildpage"
             >
               Profile
-              <span class="bg-[#0011FF] text-white text-[13px] font-normal px-2.5 py-0.5 rounded-full">
+              <span className="bg-[#0011FF] text-white text-[13px] font-normal px-2.5 py-0.5 rounded-full">
                 Available
               </span>
-              <span class="bg-gray-100 text-gray-800 text-[13px] font-medium me-2 px-2.5 py-0.5 rounded-full">
+              <span className="bg-gray-100 text-gray-800 text-[13px] font-medium me-2 px-2.5 py-0.5 rounded-full">
                 Unvailable
               </span>
             </Link>
+          </li>
+          <li className="text-[16px] text-[#000] hover:text-[#0011FF] cursor-pointer">
+            <button className="bg-[#0011FF] w-full px-4 py-2 rounded-md text-[#fff]">
+              <div className="flex items-center gap-2 text-[16px] font-normal justify-center">
+                + Search for Creator UGC
+              </div>
+            </button>
           </li>
         </ul>
       </div>

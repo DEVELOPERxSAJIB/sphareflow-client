@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useRef, useCallback } from "react";
-import InformationList from "../../components/BrandElements/BrandInformationList";
 import BasicInfoCard from "../../components/ProfileElements/BasicInfoCard";
 import UserInfoForm from "../../components/ProfileElements/UserInfoForm";
 import { equipment, filming, industries, pets } from "../../constants/data";
@@ -14,6 +13,7 @@ import { FaCheck } from "react-icons/fa";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import HeaderUgcCreatorProfile from "../../components/Header/HeaderUgcCreatorProfile";
 import CreatePackage from "../../components/ProfileElements/Modal/CreatePackage";
+import InformationList from "../../components/ProfileElements/InformationList";
 
 function CreateProfile() {
   const [uploadProfile, setUploadProfile] = useState("");
@@ -84,7 +84,7 @@ function CreateProfile() {
           <InformationList
             scrollToSection={(index) => {
               switch (index) {
-                case 0: // Change from 1 to 0
+                case 0:
                   profileSettingRef.current?.scrollIntoView({
                     behavior: "smooth",
                   });

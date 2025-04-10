@@ -22,13 +22,13 @@ const IndustriesForBrand = ({
           <button
             key={index}
             className={`border px-3 py-2 rounded-[22px] ${
-              selectedIndustries.includes(industry)
+              selectedIndustries.includes(industry.value)
                 ? "bg-[#0011FF] text-white"
                 : "text-gray-500 hover:bg-gray-100"
             } transition-all duration-200`}
-            onClick={() => onSelect(industry)}
+            onClick={() => onSelect(industry.value)}
           >
-            {industry}
+            {industry.label}
           </button>
         ))}
       </div>

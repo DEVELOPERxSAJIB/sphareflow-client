@@ -193,78 +193,10 @@ export const countries = [
   { value: "zimbabwe", label: "Zimbabwe" },
 ];
 
-export const countryCityData = {
-  afghanistan: ["Kabul", "Kandahar", "Herat", "Mazar-i-Sharif"],
-  albania: ["Tirana", "Durrës", "Vlorë", "Shkodër"],
-  algeria: ["Algiers", "Oran", "Constantine", "Annaba"],
-  andorra: ["Andorra la Vella", "Escaldes-Engordany"],
-  angola: ["Luanda", "Huambo", "Lobito", "Benguela"],
-  argentina: ["Buenos Aires", "Córdoba", "Rosario", "Mendoza"],
-  australia: ["Sydney", "Melbourne", "Brisbane", "Perth", "Adelaide"],
-  austria: ["Vienna", "Salzburg", "Innsbruck", "Graz"],
-  bangladesh: ["Dhaka", "Chittagong", "Khulna", "Rajshahi"],
-  belgium: ["Brussels", "Antwerp", "Ghent", "Charleroi"],
-  brazil: ["São Paulo", "Rio de Janeiro", "Brasília", "Salvador"],
-  canada: ["Toronto", "Vancouver", "Montreal", "Calgary", "Ottawa"],
-  china: ["Beijing", "Shanghai", "Guangzhou", "Shenzhen", "Wuhan"],
-  egypt: ["Cairo", "Alexandria", "Giza", "Shubra El-Kheima"],
-  france: ["Paris", "Marseille", "Lyon", "Toulouse", "Nice"],
-  germany: ["Berlin", "Hamburg", "Munich", "Cologne", "Frankfurt"],
-  india: ["Mumbai", "Delhi", "Bangalore", "Hyderabad", "Chennai"],
-  indonesia: ["Jakarta", "Surabaya", "Bandung", "Medan", "Semarang"],
-  iran: ["Tehran", "Mashhad", "Isfahan", "Karaj", "Shiraz"],
-  iraq: ["Baghdad", "Basra", "Erbil", "Mosul", "Najaf"],
-  ireland: ["Dublin", "Cork", "Galway", "Limerick"],
-  italy: ["Rome", "Milan", "Naples", "Turin", "Palermo"],
-  japan: ["Tokyo", "Osaka", "Yokohama", "Nagoya", "Sapporo"],
-  kenya: ["Nairobi", "Mombasa", "Kisumu", "Nakuru", "Eldoret"],
-  mexico: ["Mexico City", "Guadalajara", "Monterrey", "Puebla", "Tijuana"],
-  nigeria: ["Lagos", "Abuja", "Kano", "Ibadan", "Port Harcourt"],
-  pakistan: [
-    "Karachi",
-    "Lahore",
-    "Islamabad",
-    "Rawalpindi",
-    "Faisalabad",
-    "Multan",
-  ],
-  philippines: [
-    "Manila",
-    "Quezon City",
-    "Davao City",
-    "Cebu City",
-    "Zamboanga City",
-  ],
-  russia: [
-    "Moscow",
-    "Saint Petersburg",
-    "Novosibirsk",
-    "Yekaterinburg",
-    "Kazan",
-  ],
-  saudi_arabia: ["Riyadh", "Jeddah", "Mecca", "Medina", "Dammam"],
-  south_africa: [
-    "Johannesburg",
-    "Cape Town",
-    "Durban",
-    "Pretoria",
-    "Port Elizabeth",
-  ],
-  south_korea: ["Seoul", "Busan", "Incheon", "Daegu", "Daejeon"],
-  spain: ["Madrid", "Barcelona", "Valencia", "Seville", "Zaragoza"],
-  sri_lanka: ["Colombo", "Kandy", "Galle", "Jaffna", "Negombo"],
-  thailand: ["Bangkok", "Chiang Mai", "Pattaya", "Phuket", "Nonthaburi"],
-  turkey: ["Istanbul", "Ankara", "Izmir", "Bursa", "Adana"],
-  ukraine: ["Kyiv", "Kharkiv", "Odessa", "Dnipro", "Lviv"],
-  united_arab_emirates: ["Dubai", "Abu Dhabi", "Sharjah", "Ajman"],
-  united_kingdom: ["London", "Manchester", "Birmingham", "Leeds", "Glasgow"],
-  united_states: ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix"],
-  vietnam: ["Ho Chi Minh City", "Hanoi", "Da Nang", "Hai Phong", "Can Tho"],
-};
-
 export const gender = [
   { value: "male", label: "Male" },
   { value: "female", label: "Female" },
+  { value: "others", label: "Others" },
 ];
 
 export const ageGroup = [
@@ -274,37 +206,22 @@ export const ageGroup = [
 ];
 
 export const content = [
-  { value: "VIDEO", label: "Video" },
-  { value: "PHOTO", label: "Photo" },
-];
-
-export const industry = [
-  { value: "app&tech", label: "App and Tech" },
-  { value: "finance", label: "Finance" },
-  { value: "healthcare", label: "Health Care" },
-  { value: "education", label: "Education" },
-  { value: "real_estate", label: "Real Estate" },
-  { value: "retail", label: "Retail" },
-  { value: "hourse", label: "Hourse" },
-  { value: "apartment", label: "Apartment" },
-  { value: "garden", label: "Garden" },
-  { value: "car", label: "Car" },
-  { value: "motorbike", label: "Motorbike" },
-  { value: "bike", label: "Bike" },
-  { value: "couple", label: "Couple" },
-  { value: "baby", label: "Baby" },
-  { value: "child", label: "Child" },
-  { value: "parent", label: "Parent" },
-  { value: "family", label: "Family" },
-  { value: "friends", label: "Friends" },
-  { value: "dog", label: "Dog" },
-  { value: "cat", label: "Cat" },
+  { value: "photo", label: "Video" },
+  { value: "video", label: "Photo" },
 ];
 
 export const responseTime = [
-  { value: "10_minutes", label: "10 minutes" },
-  { value: "20_minutes", label: "20 minutes" },
-  { value: "30_minutes", label: "30 minutes" },
+  { value: "10 minutes", label: "10 minutes" },
+  { value: "20 minutes", label: "20 minutes" },
+  { value: "30 minutes", label: "30 minutes" },
+  { value: "1 hour", label: "1 hour" },
+  { value: "2 hour", label: "2 hour" },
+  { value: "5 hour", label: "5 hour" },
+  { value: "8 hour", label: "8 hour" },
+  { value: "12 hour", label: "12 hour" },
+  { value: "16 hour", label: "16 hour" },
+  { value: "20 hour", label: "20 hour" },
+  { value: "24 hour", label: "24 hour" },
 ];
 
 export const languages = [
@@ -346,84 +263,101 @@ export const languages = [
 ];
 
 export const industries = [
-  "App & Tech",
-  "Finance",
-  "Healthcare",
-  "Education",
-  "Real Estate",
-  "Retail",
-  "Transportation",
-  "Hospitality",
-  "Manufacturing",
-  "Agriculture",
-  "Media & Entertainment",
-  "Legal Services",
-  "Construction",
-  "E-commerce",
-  "Marketing & Advertising",
-  "Telecommunications",
-  "Energy & Utilities",
-];
-
-export const industriesBrand = [
   // Fashion & Beauty
-  "Fashion (Clothing, Accessories, Shoes)",
-  "Beauty & Skincare",
-  "Haircare (Products, Extensions, Salons)",
-  "Cosmetics & Nails",
+  { value: "fashion", label: "Fashion" },
+  { value: "accessories", label: "Accessories" },
+  { value: "shoes", label: "Shoes" },
+  { value: "beauty-skincare", label: "Beauty & Skincare" },
+  { value: "makeup", label: "Makeup" },
+  { value: "skincare", label: "Skincare" },
+  { value: "perfumes", label: "Perfumes" },
+  { value: "haircare", label: "Haircare" },
+  { value: "hair-products", label: "Hair Products" },
+  { value: "hair-extensions", label: "Hair Extensions" },
+  { value: "hair-salons", label: "Hair Salons" },
+  { value: "cosmetics-nails", label: "Cosmetics & Nails" },
 
   // Lifestyle & Well-Being
-  "Health & Wellness (Fitness, Yoga, Spa, Massages)",
-  "Luxury & High-End Lifestyle",
-  "Travel & Tourism (Hotels, Agencies, Experiences)",
-  "Events & Entertainment (Weddings, Concerts)",
+  { value: "health-wellness", label: "Health & Wellness" },
+  { value: "fitness", label: "Fitness" },
+  { value: "yoga", label: "Yoga" },
+  { value: "spa", label: "Spa" },
+  { value: "massages", label: "Massages" },
+  { value: "luxury-lifestyle", label: "Luxury Lifestyle" },
+  { value: "high-end-lifestyle", label: "High-End Lifestyle" },
+  { value: "travel-tourism", label: "Travel & Tourism" },
+  { value: "hotels", label: "Hotels" },
+  { value: "travel-agencies", label: "Travel Agencies" },
+  { value: "local-experiences", label: "Local Experiences" },
+  { value: "events-entertainment", label: "Events & Entertainment" },
+  { value: "weddings", label: "Weddings" },
+  { value: "festivals", label: "Festivals" },
+  { value: "concerts", label: "Concerts" },
 
   // Tech & Digital
-  "App & Tech (Mobile apps, SaaS, Startups)",
-  "Crypto & Web3",
-  "Gaming & eSports",
+  { value: "app-tech", label: "App & Tech" },
+  { value: "mobile-apps", label: "Mobile Apps" },
+  { value: "saas", label: "SaaS" },
+  { value: "startups", label: "Startups" },
+  { value: "crypto", label: "Crypto" },
+  { value: "web3", label: "Web3" },
+  { value: "gaming", label: "Gaming" },
+  { value: "esports", label: "eSports" },
 
   // Food & Beverages
-  "Restaurants & Cafés",
-  "Food Delivery Services",
-  "Wine & Spirits",
-  "Healthy Food & Supplements",
+  { value: "restaurants", label: "Restaurants" },
+  { value: "cafes", label: "Cafés" },
+  { value: "food-delivery", label: "Food Delivery Services" },
+  { value: "wine-spirits", label: "Wine & Spirits" },
+  { value: "healthy-food", label: "Healthy Food" },
+  { value: "supplements", label: "Supplements" },
 
   // Home & Décor
-  "Real Estate & Property",
-  "Furniture & Interior Design",
-  "Home Appliances & Smart Home",
+  { value: "real-estate", label: "Real Estate & Property" },
+  { value: "furniture", label: "Furniture" },
+  { value: "interior-design", label: "Interior Design" },
+  { value: "home-appliances", label: "Home Appliances" },
+  { value: "smart-home", label: "Smart Home" },
 
   // Mobility & Transportation
-  "Cars & Auto (Cars, Bikes, EVs)",
-  "Aviation & Luxury Transport",
+  { value: "cars", label: "Cars" },
+  { value: "motorbikes", label: "Motorbikes" },
+  { value: "electric-scooters", label: "Electric Scooters" },
+  { value: "evs", label: "EVs" },
+  { value: "aviation", label: "Aviation" },
+  { value: "luxury-transport", label: "Luxury Transport" },
 
   // Education & Services
-  "E-learning & Coaching",
-  "Personal Finance & Investment",
-  "Legal & Business Services",
+  { value: "e-learning", label: "E-learning" },
+  { value: "coaching", label: "Coaching" },
+  { value: "personal-finance", label: "Personal Finance" },
+  { value: "investment", label: "Investment" },
+  { value: "legal-services", label: "Legal Services" },
+  { value: "business-services", label: "Business Services" },
 
   // Other
-  "Other",
+  { value: "other", label: "Other" },
 ];
 
-
 export const equipment = [
-  "Hourse",
-  "Apartment",
-  "Garden",
-  "Car",
-  "Motorbike",
-  "Bike",
+  { label: "Hourse", value: "hourse" },
+  { label: "Apartment", value: "apartment" },
+  { label: "Garden", value: "garden" },
+  { label: "Car", value: "car" },
+  { label: "Motorbike", value: "motorbike" },
+  { label: "Bike", value: "bike" },
 ];
 
 export const filming = [
-  "Couple",
-  "Baby",
-  "Child",
-  "Parent",
-  "Family",
-  "Friends",
+  { label: "Couple", value: "couple" },
+  { label: "Baby", value: "baby" },
+  { label: "Child", value: "child" },
+  { label: "Parent", value: "parent" },
+  { label: "Family", value: "family" },
+  { label: "Friends", value: "friends" },
 ];
 
-export const pets = ["Dog", "Cat"];
+export const pets = [
+  { label: "Dog", value: "dog" },
+  { label: "Cat", value: "cat" },
+];

@@ -1,4 +1,6 @@
 import BrandProfile from "../../pages/Brand/BrandProfile.jsx";
+import BrandOrders from "../../pages/Brand/MyOrders.jsx";
+import SearchCreator from "../../pages/Brand/SearchCreator.jsx";
 import Selection from "../../pages/Selection/Selection";
 import ChatPage from "../../pages/UgcCreator/ChatPage.jsx";
 import ConnectStripe from "../../pages/UgcCreator/ConnectStripe";
@@ -53,6 +55,14 @@ export const PrivateRouter = [
       {
         path : "/brand",
         element : <BrandProfile />
+      },
+      {
+        path : "/brand/search-creator",
+        element : <SearchCreator />
+      },
+      {
+        path : "/brand/my-orders",
+        element : <BrandOrders />
       }
     ],
   },
