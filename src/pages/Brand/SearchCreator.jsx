@@ -17,42 +17,8 @@ import CustomRange from "../../components/BrandElements/CustomRange.jsx";
 import UgcCreatorCard from "../../components/BrandElements/UgcCreatorCard.jsx";
 
 const SearchCreator = () => {
-  const [filters, setFilters] = useState({
-    industry: "",
-    contentType: "",
-    responseTime: "",
-    location: "",
-    ageGroup: "",
-    gender: "",
-  });
 
-  const [queryVariables, setQueryVariables] = useState({});
 
-  // Dropdown handler
-  const handleDropdownChange = (field, value) => {
-    setFilters((prevFilters) => ({
-      ...prevFilters,
-      [field]: value,
-    }));
-  };
-
-  console.log("Data form search: ");
-
-  // Handler to execute the search and update variables
-  const handleSearchAndFilter = () => {
-    const filteredQueryVariables = Object.keys(filters).reduce((acc, key) => {
-      if (filters[key]) {
-        acc[key] = filters[key];
-      }
-      return acc;
-    }, {});
-
-    // Add minRange and maxRange to query variables if they are set
-    if (minRange) filteredQueryVariables.minPrice = parseInt(minRange);
-    if (maxRange) filteredQueryVariables.maxPrice = parseInt(maxRange);
-
-    setQueryVariables(filteredQueryVariables);
-  };
 
   const [page, setPage] = useState(1);
   const limit = 10;
@@ -337,7 +303,6 @@ const SearchCreator = () => {
             </div>
             <button
               className="bg-button w-full text-white py-3 text-[16px] mt-8 rounded-bl-[12px]"
-              onClick={handleSearchAndFilter}
             >
               Search & Filter
             </button>

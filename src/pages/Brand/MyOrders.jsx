@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import HeaderBrand from "../../components/Header/HeaderBrand";
-import { AllOrders, CompletedOrders } from "../../components/ProfileElements/OrderTable";
+import { BrandAllOrders, BrandCompletedOrders } from "../../components/BrandElements/OrderTables";
 
 const MyOrders = () => {
   const [activeTab, setActiveTab] = useState("active");
@@ -40,8 +40,8 @@ const MyOrders = () => {
 
         <div className="rounded-xl overflow-hidden">
           <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-            {activeTab === "active" && <AllOrders />}
-            {activeTab === "completed" && <CompletedOrders />}
+            {activeTab === "active" && <BrandAllOrders />}
+            {activeTab === "completed" && <BrandCompletedOrders />}
           </div>
         </div>
       </div>
