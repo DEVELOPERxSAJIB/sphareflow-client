@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const BrandAllOrders = () => {
   const orders = [
     {
@@ -146,15 +148,9 @@ export const BrandAllOrders = () => {
                 })()}
               </td>
               <td className="px-6 py-4 text-right">
-                {order.status === "Delivered" ? (
-                  <button className="bg-[#0011FF] text-[16px] font-normal px-5 text-[#fff] py-2 rounded-[22px]">
-                    Deliver Again
-                  </button>
-                ) : (
-                  <button className="bg-[#0011FF] text-[16px] font-normal px-5 text-[#fff] py-2 rounded-[22px]">
-                    Deliver Now
-                  </button>
-                )}
+                <Link to={'/brand/order-status'} className="bg-[#0011FF] text-[16px] font-normal px-5 text-[#fff] py-2 rounded-[22px]">
+                  Order Status
+                </Link>
               </td>
             </tr>
           ))}
@@ -165,7 +161,6 @@ export const BrandAllOrders = () => {
 };
 
 export const BrandCompletedOrders = () => {
-
   const orders = [
     {
       id: 1,
@@ -274,7 +269,6 @@ export const BrandCompletedOrders = () => {
           ))}
         </tbody>
       </table>
-
     </>
   );
 };

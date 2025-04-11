@@ -1,5 +1,7 @@
 import BrandProfile from "../../pages/Brand/BrandProfile.jsx";
 import BrandOrders from "../../pages/Brand/MyOrders.jsx";
+import OrderStatus from "../../pages/Brand/OrderStatus.jsx";
+import RatingAndFeedback from "../../pages/Brand/RatingAndFeedback.jsx";
 import SearchCreator from "../../pages/Brand/SearchCreator.jsx";
 import Selection from "../../pages/Selection/Selection";
 import ChatPage from "../../pages/UgcCreator/ChatPage.jsx";
@@ -63,6 +65,14 @@ export const PrivateRouter = [
       {
         path : "/brand/my-orders",
         element : <BrandOrders />
+      },
+      {
+        path : "/brand/order-status",
+        element : <OrderStatus />
+      },
+      {
+        path : "/brand/order-feeback",
+        element : <RatingAndFeedback />
       }
     ],
   },
