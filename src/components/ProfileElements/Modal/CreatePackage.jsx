@@ -88,7 +88,7 @@ const CreatePackage = ({ open, setOpen }) => {
 
       <div className="fixed inset-0 z-10 min-w-full overflow-y-auto">
         <div className="flex min-h-full items-center justify-center p-4 text-center">
-          <DialogPanel className="relative w-1/3 transform overflow-hidden rounded-lg bg-white shadow-xl transition-all">
+          <DialogPanel className="relative w-full sm:w-1/3 md:w-2/3 lg:w-1/3  transform overflow-hidden rounded-lg bg-white shadow-xl transition-all">
             <div className="flex p-4 justify-between items-center">
               <DialogTitle
                 as="h3"

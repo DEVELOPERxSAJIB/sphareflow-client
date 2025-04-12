@@ -165,11 +165,11 @@ const Package = ({ widthClass = "w-full", type = "video" }) => {
             >
               <Link
                 to={"/creator/profile/package"}
-                className="border border-[#0011FF] rounded-full px-6 lg:px-16 py-2 self-center w-fit"
+                className="border text-center border-[#0011FF] rounded-full py-2 self-center w-full"
               >
                 Edit
               </Link>
-              <button className="bg-[#0011FF] text-[white] rounded-full px-6 lg:px-16 py-2 self-center w-fit">
+              <button className="bg-[#0011FF] text-[white] rounded-full py-2 self-center w-full">
                 Delete
               </button>
             </div>

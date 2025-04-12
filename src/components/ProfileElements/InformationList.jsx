@@ -22,12 +22,12 @@ const InformationList = ({ scrollToSection }) => {
 
   return (
     <>
-      <div className="w-[360px] rounded-[12px] lg:block md:hidden sm:hidden xs:hidden">
+      <div className="max-w-[360px] rounded-[12px] lg:block md:hidden sm:hidden xs:hidden">
         <Link className="flex items-center justify-center gap-3 shadow-md translate-all duration-300 bg-white text-slate-800 hover:bg-red-500 w-full px-6 md:px-16 py-3 rounded-[30px] mb-4 hover:text-[#fff]">
           Delete Account
         </Link>
       </div>
-      <div className="w-[360px] rounded-[12px] bg-white shadow-md lg:block md:hidden sm:hidden xs:hidden">
+      <div className="max-w-[360px] rounded-[12px] bg-white shadow-md lg:block md:hidden sm:hidden xs:hidden">
         <ul className="text-start cursor-pointer relative">
           {items.map((item, index) => (
             <li
@@ -44,7 +44,7 @@ const InformationList = ({ scrollToSection }) => {
         </ul>
       </div>
 
-      <div className="w-[360px] rounded-[12px] lg:block md:hidden sm:hidden xs:hidden">
+      <div className="max-w-[360px] rounded-[12px] lg:block md:hidden sm:hidden xs:hidden">
         <Link to={'/creator/profile/stripe-connect'} className="flex items-center justify-center gap-3 shadow-md translate-all duration-300 bg-[#0011FF] text-white hover:bg-blue-600 w-full px-6 md:px-16 py-3 rounded-[30px] mt-4 hover:text-[#fff]">
           <BsStripe />
           Connect Stripe*

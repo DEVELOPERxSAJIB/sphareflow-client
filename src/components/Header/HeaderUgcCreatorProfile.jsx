@@ -22,7 +22,7 @@ const HeaderUgcCreatorProfile = () => {
           <Link to="/creator">
             <img src={LogoSphere} alt="logo" width={110} height={80} />
           </Link>
-          <button className="bg-[#0011FF] hidden sm:block px-4 py-2 rounded-md text-[#fff]">
+          <button className="bg-[#0011FF] hidden md:block px-4 py-2 rounded-md text-[#fff]">
             <div className="flex items-center gap-2 text-[16px] font-normal">
               + Invite a client to SphèreFlow
             </div>
@@ -44,7 +44,10 @@ const HeaderUgcCreatorProfile = () => {
               <Link to="/creator/profile/myorders">My Orders</Link>
             </li>
             <li className="text-[16px] text-[#000] hover:text-[#0011FF] cursor-pointer">
-              <Link className="flex flex-row items-center gap-2" to="/creator/profile">
+              <Link
+                className="flex flex-row items-center gap-2"
+                to="/creator/profile"
+              >
                 Profile
                 <span class="bg-[#0011FF] text-white text-[13px] font-normal px-2.5 py-0.5 rounded-full">
                   Available
@@ -134,6 +137,13 @@ const HeaderUgcCreatorProfile = () => {
                 Unvailable
               </span>
             </Link>
+          </li>
+          <li className="text-[16px] py-3 text-[#000] hover:text-[#0011FF] cursor-pointer">
+            <button className="bg-[#0011FF] md:hidden block w-full px-4 py-2 rounded-md text-[#fff]">
+              <div className="flex items-center gap-2 text-[16px] font-normal justify-center">
+                + Invite a client to SphèreFlow
+              </div>
+            </button>
           </li>
         </ul>
       </div>

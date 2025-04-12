@@ -37,11 +37,11 @@ const VideoGallery = () => {
   return (
     <div className="flex flex-col justify-center">
       <div className="flex justify-center items-center p-1 sm:p-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 md:gap-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-3 lg:grid-cols-4 gap-3">
           {videos.map((video) => (
             <div
               key={video.id}
-              className={`relative group w-[273px] h-[346px] rounded-[12px] overflow-hidden cursor-pointer transition-all ${
+              className={`relative group w-full h-[346px] rounded-[12px] overflow-hidden cursor-pointer transition-all ${
                 active === video.id
                   ? "border-4 border-blue-500 ease-in-out"
                   : "border-4 border-transparent"

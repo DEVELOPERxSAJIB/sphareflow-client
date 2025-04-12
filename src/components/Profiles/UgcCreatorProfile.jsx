@@ -49,7 +49,7 @@ const UgcCreatorProfile = () => {
             {/* Availability Section */}
             <div className="flex justify-between bg-white p-2 rounded-md">
               <button
-                className="px-8 w-full h-[40px] text-[#fff] rounded-md text-[16px]"
+                className="w-full h-[40px] text-center text-[#fff] rounded-md text-[16px]"
                 onClick={() => {
                   handleToggleAvailableAndUnavailable(true);
                 }}
@@ -65,7 +65,7 @@ const UgcCreatorProfile = () => {
                 Available
               </button>
               <button
-                className="px-8 w-full h-[40px] text-[#fff] rounded-md text-[16px]"
+                className="w-full h-[40px] text-center text-[#fff] rounded-md text-[16px]"
                 onClick={() => {
                   handleToggleAvailableAndUnavailable(false);
                 }}
@@ -282,7 +282,7 @@ const UgcCreatorProfile = () => {
             <h2 className="font-bebas text-[24px]">My UGC</h2>
           </section>
 
-          <section className="mt-5 bg-[#fff] px-5 border py-4 rounded-lg">
+          <section className="mt-5 bg-[#fff] border py-4 rounded-lg">
             <VideoGallery />
           </section>
 
