@@ -1,3 +1,4 @@
+import Dashboard from "../../pages/Admin/Dashboard/Dashboard.jsx";
 import BrandProfile from "../../pages/Brand/BrandProfile.jsx";
 import BrandOrders from "../../pages/Brand/MyOrders.jsx";
 import OrderStatus from "../../pages/Brand/OrderStatus.jsx";
@@ -73,7 +74,7 @@ export const PrivateRouter = [
       {
         path : "/brand/order-feeback",
         element : <RatingAndFeedback />
-      }
+      },
     ],
   },
 ];

@@ -118,7 +118,7 @@ const SearchCreator = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-[#F1E7FD] px-6 md:px-20 h-screen lg:px-20 xs:px-2 pt-5">
+    <div className="bg-[#F1E7FD] px-6 md:px-20 min-h-screen lg:px-20 xs:px-2 pt-5">
       <HeaderBrand />
       <div>
         <div className="mt-5">
@@ -127,7 +127,7 @@ const SearchCreator = () => {
         </div>
         <div></div>
 
-        <div className="font-switzer border bg-[#fff] rounded-[12px] mt-5 flex flex-col lg:flex-row h-[77vh]">
+        <div className="font-switzer border bg-[#fff] rounded-[12px] mt-5 flex flex-col lg:flex-row lg:h-[77vh]">
           <div className="mt-5 scrollbar-hide w-auto flex flex-col flex-1 border-r ">
             <p className="pl-4 text-[#000000] font-medium text-[14px]">
               Creator Preferences
@@ -308,7 +308,7 @@ const SearchCreator = () => {
             </button>
           </div>
 
-          <div className="scrollbar-hide relative overflow-y-auto w-4/5  sm:pl-0">
+          <div className="scrollbar-hide relative mt-5 md:mt-0 overflow-y-auto w-full lg:w-4/5 sm:pl-0">
             <div className="flex justify-end">
               <button
                 className="px-4 py-3 cursor-pointer bg-transparent text-[#0011FF] "
@@ -320,9 +320,9 @@ const SearchCreator = () => {
 
             {/* Sidebar */}
             <div
-              className={`absolute top-0 right-0 h-full bg-[#dff9fb] shadow-lg transition-transform duration-300 ease-in-out z-30 ${
-                open ? "translate-x-0 overscroll-none" : "translate-x-full"
-              } w-[35vw]`}
+              className={`absolute rounded-br-[12px] top-0 rounde overflow-hidden right-0 h-full bg-[#dff9fb] shadow-lg transition-transform duration-300 ease-in-out z-30 ${
+                open ? "translate-x-0" : "translate-x-full"
+              } w-full md:w-1/2 lg:w-[35vw]`}
             >
               <div className="px-4 py-1.5 flex justify-between items-center border-b">
                 <h2 className="text-lg font-semibold flex items-center gap-2">
@@ -346,7 +346,8 @@ const SearchCreator = () => {
                 ></iframe>
               </div>
             </div>
-            <div className="grid grid-cols-4 gap-3 px-4">
+            
+            <div className="grid justify-center sm:justify-start grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-3 px-4">
               <UgcCreatorCard />
               <UgcCreatorCard />
               <UgcCreatorCard />
@@ -362,7 +363,7 @@ const SearchCreator = () => {
             {/* pagenation */}
             <footer className="bg-slate-100 w-full sticky bottom-0 left-0 right-0 z-40 mt-6 rounded-br-[12px] flex items-center justify-between px-4">
               <p className="w-auto ">1 - 24 of more then 608 pages</p>
-              <div className="py-3 space-x-1">
+              <div className="py-1 space-x-1">
                 {/* Previous button */}
                 <button
                   disabled={page === 1}
@@ -422,6 +423,7 @@ const SearchCreator = () => {
               </div>
             </footer>
           </div>
+
         </div>
       </div>
     </div>

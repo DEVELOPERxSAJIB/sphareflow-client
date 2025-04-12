@@ -19,7 +19,7 @@ const HeaderBrand = () => {
     <div>
       <nav className="bg-white flex justify-between items-center px-2 md:px-4 lg:px-6 py-2  rounded-lg">
         <div className="flex items-center justify-start gap-10">
-          <Link to="/creator">
+          <Link to="/brand">
             <img src={LogoSphere} alt="logo" width={110} height={80} />
           </Link>
           <button className="bg-[#0011FF] hidden md:block px-4 py-2 rounded-md text-[#fff]">

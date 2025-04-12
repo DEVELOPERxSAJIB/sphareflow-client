@@ -128,7 +128,7 @@ export const AllOrders = () => {
                     case "In progress":
                       return (
                         <span className="bg-[#0011FF33] text-[#0011FF] text-[16px] font-medium me-2 px-5 py-1 rounded-full">
-                          In progress
+                          Inprogress
                         </span>
                       );
                     case "Delivered":
