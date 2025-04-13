@@ -1,6 +1,6 @@
 import { RouterProvider } from "react-router-dom";
-import routes from "./router/Routes";
 import { ToastContainer } from "react-toastify";
+import routes from "./router/routes"
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         pauseOnHover
         theme="light"
       />
-        <RouterProvider router={routes} />
+      <RouterProvider router={routes} />
     </>
   );
 }
