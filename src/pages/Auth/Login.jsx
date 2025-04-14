@@ -18,7 +18,7 @@ const Login = () => {
       <div className="hidden lg:block w-[50%] h-screen px-3">
         <LoginAnimation />
       </div>
-      <div className="lg:w-[50%] md:w-[100%] sm:w-[100%] bg-primary h-screen flex flex-col items-center">
+      <div className="lg:w-[50%] md:w-[100%] sm:w-[100%] h-screen flex flex-col items-center">
         <div className="self-start ml-5 mt-5">
           <img src={Logo} alt="Logo" width={120} />
         </div>

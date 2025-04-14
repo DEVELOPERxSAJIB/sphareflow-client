@@ -22,6 +22,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+import { RiMenuFold4Line } from "react-icons/ri";
 
 const SIDEBAR_COOKIE_NAME = "sidebar_state"
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7
@@ -228,6 +229,7 @@ Sidebar.displayName = "Sidebar"
 
 const SidebarTrigger = React.forwardRef(({ className, onClick, ...props }, ref) => {
   const { toggleSidebar } = useSidebar()
+  console.log(toggleSidebar);
 
   return (
     (<Button
@@ -242,6 +244,7 @@ const SidebarTrigger = React.forwardRef(({ className, onClick, ...props }, ref) 
       }}
       {...props}>
       <PanelLeft />
+      
       <span className="sr-only">Toggle Sidebar</span>
     </Button>)
   );
