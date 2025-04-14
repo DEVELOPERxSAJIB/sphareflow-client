@@ -1,13 +1,6 @@
 import * as React from "react";
 import {
-  AudioWaveform,
-  BookOpen,
-  Bot,
-  Command,
-  Frame,
   GalleryVerticalEnd,
-  Map,
-  PieChart,
   Settings2,
   SquareTerminal,
 } from "lucide-react";
@@ -21,133 +14,90 @@ import {
 import { NavMain } from "./nav-main";
 import { TeamSwitcher } from "./team-switcher";
 import { NavUser } from "./nav-user";
+import { LuUsers } from "react-icons/lu";
+import { TiMessages } from "react-icons/ti";
+import { RiSecurePaymentLine } from "react-icons/ri";
+import { MdReportGmailerrorred } from "react-icons/md";
 
 
 const data = {
   user: {
-    name: "shadcn",
-    email: "m@example.com",
+    name: "Md Sajib Shikder",
+    email: "sajib@gmail.com",
     avatar: "/avatars/shadcn.jpg",
   },
   teams: [
     {
-      name: "Acme Inc",
+      name: "SphereFlow",
       logo: GalleryVerticalEnd,
-      plan: "Enterprise",
-    },
-    {
-      name: "Acme Corp.",
-      logo: AudioWaveform,
-      plan: "Startup",
-    },
-    {
-      name: "Evil Corp.",
-      logo: Command,
-      plan: "Free",
+      plan: "Connect Brands and Creators",
     },
   ],
   navMain: [
     {
-      title: "Playground",
-      url: "#",
+      title: "Dashboard",
+      url: "/admin/dashboard",
       icon: SquareTerminal,
       isActive: true,
-      items: [
-        {
-          title: "History",
-          url: "#",
-        },
-        {
-          title: "Starred",
-          url: "#",
-        },
-        {
-          title: "Settings",
-          url: "#",
-        },
-      ],
     },
     {
-      title: "Models",
+      title: "User",
       url: "#",
-      icon: Bot,
+      icon: LuUsers,
       items: [
         {
-          title: "Genesis",
-          url: "#",
+          title: "All Users",
+          url: "/admin/dashboard/users",
         },
         {
-          title: "Explorer",
-          url: "#",
+          title: "User Logs",
+          url: "/admin/dashboard/user-logs",
         },
         {
-          title: "Quantum",
-          url: "#",
+          title: "Flagged Users",
+          url: "/admin/dashboard/flagged-users",
         },
       ],
     },
     {
-      title: "Documentation",
+      title: "Messeging",
       url: "#",
-      icon: BookOpen,
+      icon: TiMessages,
       items: [
         {
-          title: "Introduction",
-          url: "#",
+          title: "All Messages",
+          url: "/admin/dashboard/all-messages",
         },
         {
-          title: "Get Started",
-          url: "#",
-        },
-        {
-          title: "Tutorials",
-          url: "#",
-        },
-        {
-          title: "Changelog",
-          url: "#",
+          title: "Flagged Messages",
+          url: "/admin/dashboard/flagged-messages",
         },
       ],
     },
     {
-      title: "Settings",
+      title: "Contents",
       url: "#",
       icon: Settings2,
       items: [
         {
-          title: "General",
-          url: "#",
+          title: "All Content",
+          url: "/admin/dashboard/all-content",
         },
         {
-          title: "Team",
-          url: "#",
-        },
-        {
-          title: "Billing",
-          url: "#",
-        },
-        {
-          title: "Limits",
-          url: "#",
+          title: "Flagged Content",
+          url: "/admin/dashboard/flagged-content",
         },
       ],
     },
-  ],
-  projects: [
     {
-      name: "Design Engineering",
-      url: "#",
-      icon: Frame,
+      title: "Payments",
+      url: "/admin/dashboard/payments",
+      icon: RiSecurePaymentLine,
     },
     {
-      name: "Sales & Marketing",
-      url: "#",
-      icon: PieChart,
-    },
-    {
-      name: "Travel",
-      url: "#",
-      icon: Map,
+      title: "Reports",
+      url: "/admin/dashboard/reports",
+      icon: MdReportGmailerrorred,
     },
   ],
 };
